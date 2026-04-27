@@ -32,11 +32,34 @@ function App() {
     },
   ])
 
+  const [experience, setExperience] = useState([
+  {
+    role: "Job Title",
+    company: "Company Name",
+    date: "20XX – 20XX",
+    details: [
+      "Brief description of responsibilities or achievements",
+      "Another accomplishment or task performed",
+      "Optional additional detail about your role"
+    ]
+  },
+  {
+    role: "Another Job Title",
+    company: "Another Company",
+    date: "20XX – 20XX",
+    details: [
+      "Summary of duties and contributions",
+      "Key achievement or project involvement",
+      "Additional relevant detail"
+    ]
+  }
+])
+
   return (
     <>
       <General info={generalInfo} setInfo={setGeneralInfo} />
       <Education info={education} setInfo={setEducation} />
-      <Experience />
+      <Experience info={experience} setInfo={setExperience} />
     </>
   )
 }
