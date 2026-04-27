@@ -1,0 +1,67 @@
+.experienceSection {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #222;
+}
+
+.experienceList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card {
+  background: #ffffff;
+  padding: 1.8rem 2rem;
+  border-radius: 14px;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  transition: 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.role {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.company {
+  margin: 0.6rem 0 1rem 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #444;
+}
+
+.date {
+  font-size: 0.95rem;
+  color: #777;
+}
+
+.details {
+  margin-left: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.details li {
+  margin-bottom: 0.4rem;
+}
