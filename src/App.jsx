@@ -16,6 +16,7 @@ function App() {
     email: "placeholder@email.com",
     phone: "123-456-7890",
   })
+  const [editGeneral, setEditGeneral] = useState(false);
 
   /*
    * States for education section
@@ -38,6 +39,7 @@ function App() {
       ],
     },
   ])
+  const [editEducation, setEditEducation] = useState(false);
 
   /*
    * States for experience section
