@@ -8,7 +8,7 @@ export default function General({info, setInfo, editMode, editToggle}) {
             </button>
 
             {editMode ? ( /* edit mode view */
-                <header className={styles.hero}>
+                <header className={`${styles.hero} ${editMode ? styles.editing : ""}`}>
                     <input
                         value={info.name}
                         onChange={e => setInfo({ ...info, name: e.target.value })}
@@ -27,17 +27,19 @@ export default function General({info, setInfo, editMode, editToggle}) {
                     <input
                         value={info.phone}
                         onChange={e => setInfo({ ...info, phone: e.target.value })}
+                        type="tel"
                     />
 
                     <input
                         value={info.email}
                         onChange={e => setInfo({ ...info, email: e.target.value })}
+                        type="email"
                     />
                 </header>
             ) : ( /* normal view */
                 <header className={styles.hero}>
                     <div className={styles.header}>
-                        <h2>{info.name} | {info.title}</h2>
+                        <h2> {info.name} {info.title && `| ${info.title}`} </h2>
                     </div>
 
                     <hr className={styles.divider} />

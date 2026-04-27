@@ -67,3 +67,50 @@
   height: 22px;
   opacity: 0.8;
 }
+
+/* Edit mode container */
+.editing {
+  background: #f5f7fa;          /* soft gray-blue */
+  border: 1px solid #d0d7de;    /* subtle border */
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Inputs inside edit mode */
+.editing input,
+.editing textarea {
+  width: 100%;
+  background: #ffffff;
+  color: #111;
+  border: 1px solid #c7c7c7;
+  padding: 8px 10px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Focus state */
+.editing input:focus,
+.editing textarea:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 3px rgba(74,144,226,0.25);
+}
+
+/* Optional: Edit mode badge */
+.editing::before {
+  content: "Editing";
+  display: inline-block;
+  background: #4a90e2;
+  color: white;
+  padding: 2px 8px;
+  font-size: 0.75rem;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
